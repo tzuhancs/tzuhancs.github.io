@@ -1,5 +1,5 @@
 ;(function () {
-	
+
 	'use strict';
 
 
@@ -26,15 +26,24 @@
 	};
 
 	var fullHeight = function() {
-
 		if ( !isMobile.any() ) {
 			$('.js-fullheight').css('height', $(window).height());
 			$(window).resize(function(){
 				$('.js-fullheight').css('height', $(window).height());
 			});
 		}
-
 	};
+
+
+	var halfHeight = function() {
+		if ( !isMobile.any() ) {
+			$('.js-halfheight').css('height', $(window).height()/2);
+			$(window).resize(function(){
+				$('.js-halfheight').css('height', $(window).height()/2);
+			});
+		}
+	};
+
 
 
 	var counter = function() {
@@ -49,9 +58,9 @@
 	var counterWayPoint = function() {
 		if ($('#colorlib-counter').length > 0 ) {
 			$('#colorlib-counter').waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( counter , 400);					
+					setTimeout( counter , 400);
 					$(this.element).addClass('animated');
 				}
 			} , { offset: '90%' } );
@@ -64,7 +73,7 @@
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -87,9 +96,9 @@
 							el.removeClass('item-animate');
 						},  k * 200, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
@@ -104,10 +113,10 @@
 
 			if ($('body').hasClass('offcanvas')) {
 				$this.removeClass('active');
-				$('body').removeClass('offcanvas');	
+				$('body').removeClass('offcanvas');
 			} else {
 				$this.addClass('active');
-				$('body').addClass('offcanvas');	
+				$('body').addClass('offcanvas');
 			}
 		});
 
@@ -126,9 +135,9 @@
 
     			$('body').removeClass('offcanvas');
     			$('.js-colorlib-nav-toggle').removeClass('active');
-			
+
 	    	}
-	    	
+
 	    }
 		});
 
@@ -137,7 +146,7 @@
 
     			$('body').removeClass('offcanvas');
     			$('.js-colorlib-nav-toggle').removeClass('active');
-			
+
 	    	}
 		});
 
@@ -182,9 +191,9 @@
 	var navigationSection = function() {
 
 		var $section = $('section[data-section]');
-		
+
 		$section.waypoint(function(direction) {
-		  	
+
 		  	if (direction === 'down') {
 		    	navActive($(this.element).data('section'));
 		  	}
@@ -208,7 +217,7 @@
 
 
 	var sliderMain = function() {
-		
+
 	  	$('#colorlib-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
@@ -256,9 +265,9 @@
 
 				$("#sticky_item").stick_in_parent();
 			}
-			
 
-			
+
+
 
 		});
 
@@ -289,6 +298,7 @@
 	// Document on load.
 	$(function(){
 		fullHeight();
+		halfHeight();
 		counter();
 		counterWayPoint();
 		contentWayPoint();
