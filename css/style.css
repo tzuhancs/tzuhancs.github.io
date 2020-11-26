@@ -379,7 +379,8 @@ body.offcanvas {
     transform: translateX(300px); }
 
 .colorlib-narrow-content {
-  padding: 0 2.5em; }
+  padding: 0 2.5em;
+}
   @media screen and (max-width: 768px) {
     .colorlib-narrow-content {
       padding: 0; } }
