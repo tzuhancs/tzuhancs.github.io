@@ -11,6 +11,20 @@
 *	Edit this section
 *
 * ======================================================= */
+
+
+
+big-h {
+  font-size: 20px;
+}
+
+mid-h {
+  font-size: 18px;
+}
+
+
+
+
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
