@@ -15,15 +15,15 @@
 
 
 big-h {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 mid-h {
-  font-size: 18px;
+  font-size: 22px;
 }
 
 big-t {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .boxed {
@@ -38,7 +38,7 @@ big-t {
 body {
   font-family: "Quicksand", Arial, sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.7); }
   @media screen and (max-width: 992px) {
@@ -57,7 +57,7 @@ a {
 
 p {
   margin-bottom: 1.5em;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
