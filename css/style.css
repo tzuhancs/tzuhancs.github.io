@@ -928,7 +928,7 @@ body.offcanvas {
       -o-transition: 0.3s;
       transition: 0.3s; }
   .blog-entry .desc h3 {
-    text-align: left;
+    /* text-align: left; */
     font-size: 18px;
     margin-bottom: 25px;
     line-height: auto;
