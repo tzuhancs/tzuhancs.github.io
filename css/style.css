@@ -941,7 +941,7 @@ body.offcanvas {
       text-decoration: none; }
   .blog-entry .desc span {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     font-size:14px;
     color: rgba(0, 0, 0, 0.4) !important;
     text-transform: uppercase;
