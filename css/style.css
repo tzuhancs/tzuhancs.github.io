@@ -30,13 +30,13 @@
 
 #news {
   float: left;
-  width: 70% ;
+  width: 60% ;
 }
 #twitter {
   float: left;
-  width: 30%;
+  width: 40%;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1000px) {
   /* for widths less than or equal to 629 pixels */
   #news {
     padding-left: 3em;
@@ -395,8 +395,9 @@ figure {
               padding: 7em;
               font-size: 28px; }
               #colorlib-hero .flexslider .slider-text > .slider-text-inner h3{
-                padding: 4.5em;
-                font-size: 28px; }
+                margin-top:140px;
+                font-size: 28px;
+                }
               #colorlib-hero .flexslider .slider-text > .slider-text-inner h4{
                 font-size: 28px; }
               #colorlib-hero .flexslider .slider-text > .slider-text-inner h5{
