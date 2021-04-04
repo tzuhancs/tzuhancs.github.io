@@ -312,7 +312,7 @@ figure {
       z-index: 9; }
       #colorlib-hero .flexslider .slider-text > .slider-text-inner {
         display: table-cell;
-        /* vertical-align: ; */
+        vertical-align: ;
         min-height: 700px;
         padding: 2.5em;
         position: relative; }
@@ -320,16 +320,30 @@ figure {
           #colorlib-hero .flexslider .slider-text > .slider-text-inner {
             /* text-align: center; */
              } }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h1, #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner h1,
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           margin: 0;
-          padding: 0;
+          /* padding: 2.5em; */
           color: black;
           font-family: "Playfair Display", Georgia, serif; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+          padding: 3em;
           margin-bottom: 20px;
-          font-size: 40px;
+          font-size: 35px;
           line-height: 1.3;
           font-weight: 700; }
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner h4{
+            /* padding: 2.5em; */
+            margin-bottom: 20px;
+            font-size: 35px;
+            line-height: 1.3;
+            font-weight: 700; }
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner h5{
+                /* padding: 3.5em; */
+                /* margin-bottom: 20px; */
+                font-size: 30px;
+                line-height: 1.3;
+                font-weight: 700; }
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
               font-size: 28px; } }
@@ -347,8 +361,7 @@ figure {
           @media screen and (max-width: 768px) {
             #colorlib-hero .flexslider .slider-text > .slider-text-inner .heading-section {
               font-size: 30px; } }
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner s
-.colorlib-lead {
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner s .colorlib-lead {
           font-size: 20px;
           color: #fff; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner p {
