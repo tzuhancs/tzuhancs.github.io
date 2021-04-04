@@ -329,7 +329,7 @@ figure {
           color: black;
           font-family: "Playfair Display", Georgia, serif; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
-          padding: 2.5em;
+          padding: 3em;
           margin-bottom: 20px;
           font-size: 35px;
           line-height: 1.3;
@@ -337,7 +337,7 @@ figure {
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h4{
             /* padding: 2.5em; */
             margin-bottom: 20px;
-            font-size: 35px;
+            font-size: 30px;
             line-height: 1.3;
             font-weight: 700; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h5{
