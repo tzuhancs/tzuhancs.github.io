@@ -321,7 +321,9 @@ figure {
             /* text-align: center; */
              } }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h1,
-        #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner h2,
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner h4,
+        #colorlib-hero .flexslider .slider-text > .slider-text-inner h5, {
           margin: 0;
           /* padding: 2.5em; */
           color: black;
@@ -345,7 +347,9 @@ figure {
                 line-height: 1.3;
                 font-weight: 700; }
           @media screen and (max-width: 768px) {
-            #colorlib-hero .flexslider .slider-text > .slider-text-inner h1 {
+            #colorlib-hero .flexslider .slider-text > .slider-text-inner h1,
+            #colorlib-hero .flexslider .slider-text > .slider-text-inner h4,
+            #colorlib-hero .flexslider .slider-text > .slider-text-inner h5, {
               font-size: 28px; } }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h2 {
           font-size: 18px;
