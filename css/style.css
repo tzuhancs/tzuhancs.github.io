@@ -12,6 +12,10 @@
 *
 * ======================================================= */
 
+.bottom-three {
+   margin-bottom: 3cm;
+}
+
 .column {
   float: left;
   width: 50%;
