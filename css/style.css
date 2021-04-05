@@ -415,7 +415,7 @@ figure {
               padding: 7em;
               font-size: 28px; }
               #colorlib-hero .flexslider .slider-text > .slider-text-inner h3{
-                margin-top:110px;
+                /* margin-top:110px; */
                 font-size: 28px;
                 }
               #colorlib-hero .flexslider .slider-text > .slider-text-inner h4{
