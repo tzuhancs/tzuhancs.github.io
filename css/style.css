@@ -387,7 +387,7 @@ figure {
           line-height: 1.3;
           font-weight: 700; }
         #colorlib-hero .flexslider .slider-text > .slider-text-inner h3{
-              /* padding: 2.5em; */
+              padding: 2.5em;
               margin-bottom: 20px;
               font-size: 30px;
               line-height: 1.3;
@@ -409,7 +409,7 @@ figure {
               padding: 7em;
               font-size: 28px; }
               #colorlib-hero .flexslider .slider-text > .slider-text-inner h3{
-                margin-top:140px;
+                margin-top:110px;
                 font-size: 28px;
                 }
               #colorlib-hero .flexslider .slider-text > .slider-text-inner h4{
