@@ -33,18 +33,32 @@
   width: 60% ;
 }
 #twitter {
+  padding-left: 3em;
   float: left;
   width: 40%;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
   /* for widths less than or equal to 629 pixels */
   #news {
-    padding-left: 3em;
+    padding-left: 2em;
+    float: none ;
+    width: 100%  ;
+  }
+  #twitter {
+    padding-left: 2em;
+    float: none ;
+    width: 0% ;
+  }
+}
+@media only screen and (max-width: 629px) {
+  /* for widths less than or equal to 629 pixels */
+  #news {
+    padding-left: 2em;
     float: none ;
     width: 100% ;
   }
   #twitter {
-    padding-left: 3em;
+    padding-left: 2em;
     float: none ;
     width: 0% ;
   }
@@ -399,7 +413,7 @@ figure {
                 font-size: 28px;
                 }
               #colorlib-hero .flexslider .slider-text > .slider-text-inner h4{
-                font-size: 28px; }
+                font-size: 20px; }
               #colorlib-hero .flexslider .slider-text > .slider-text-inner h5{
                 padding: 3em;
                 color: #DC7E4A;
