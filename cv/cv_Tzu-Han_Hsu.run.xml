@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>main.bcf</file>
+      <file>cv_Tzu-Han_Hsu.bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>main.bbl</file>
+      <file>cv_Tzu-Han_Hsu.bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -68,19 +68,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>main</infile>
+      <infile>cv_Tzu-Han_Hsu</infile>
     </cmdline>
     <input>
-      <file>main.bcf</file>
+      <file>cv_Tzu-Han_Hsu.bcf</file>
     </input>
     <output>
-      <file>main.bbl</file>
+      <file>cv_Tzu-Han_Hsu.bbl</file>
     </output>
     <provides type="dynamic">
-      <file>main.bbl</file>
+      <file>cv_Tzu-Han_Hsu.bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>main.bcf</file>
+      <file>cv_Tzu-Han_Hsu.bcf</file>
     </requires>
     <requires type="editable">
       <file>papers.bib</file>
