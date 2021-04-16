@@ -75,15 +75,19 @@
 
 % Photo heading
 \newcommand{\headingphoto}[3]{
-    \begin{minipage}[t]{0.60\textwidth}
+    \begin{minipage}[c]{0.32\textwidth}
     \begin{dummyenv}
-    \vspace*{\fill}
-    \Huge \textcolor{color-title}{#1}
+    	#2
+%    \Huge \textcolor{color-title}{#1}
     \end{dummyenv}
-    \vspace{5mm}\\
-    #2
+	\end{minipage}
+	%
+    \begin{minipage}[c]{0.32\textwidth}
+    	\centering
+        \Huge\bf \textcolor{color-title}{#1}	
     \end{minipage}
-    \begin{minipage}[t]{0.35\textwidth}
+	%
+    \begin{minipage}[c]{0.32\textwidth}
     \begin{flushright}
     \includegraphics[width=.5\linewidth,keepaspectratio,valign=t]{#3}
     \end{flushright}
