@@ -1,20 +1,29 @@
-
 \section{Education}
+
+\newcommand{\fromto}[2]{#1\textendash #2}
+
+\newcommand{\eduentry}[4][]{\item[#1]
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		{\bf #2} & {#3} \\ {\small#4} \\ \end{tabular*}}
 
 \outerlist{
 
-\entrybig
-{\textbf{Ph.D. Student in Computer Science Engineering}}{2020\textendash Present}
-{Michigan State University, East Lansing, MI, USA}{}
+\eduentry
+{{Ph.D. Student in Computer Science Engineering}}
+{\fromto{2020}{present}}
+{Michigan State University, East Lansing, MI, USA}
 \hspace*{3mm} {\em Advisor: Dr. Borzoo Bonakdarpour}
 
 
-\entrybig
-{\textbf{Bachelor of Science in Computer Science}}{2016\textendash 2020}
-{Iowa State University, Ames, IA, USA }{}
+\eduentry
+{\textbf{Bachelor of Science in Computer Science}}
+{\fromto{2016}{2020}}
+{Iowa State University, Ames, IA, USA }
 
-\entrybig
-{\textbf{Bachelor of Music in Piano Performance}}{2013\textendash 2017}
-{Iowa State University, Ames, IA, USA }{}
+\eduentry
+{\textbf{Bachelor of Music in Piano Performance}}
+{\fromto{2013}{2017}}
+{Iowa State University, Ames, IA, USA }
+
 }
 
