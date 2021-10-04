@@ -82,6 +82,10 @@ big-t {
   font-size: 18px;
 }
 
+big-s {
+  font-size: 14px;
+}
+
 .boxed {
   border: 1px solid #2c98f0 ;
   margin-left: 3em;
@@ -771,8 +775,12 @@ body.offcanvas {
       color: #a84cb8; }
   .services.color-5 {
     border-bottom: 2px solid #2fa499; }
+    .services.color-5 .icon2 i {
+      color: #2fa499; }
   .services.color-6 {
     border-bottom: 2px solid #4054b2; }
+    .services.color-6 .icon2 i {
+      color: #4054b2; }
 
 .services {
   margin-bottom: 80px;
