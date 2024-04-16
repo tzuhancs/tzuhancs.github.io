@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  16 APR 2024 00:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.27)  16 APR 2024 08:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1061,7 +1061,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             ! on input line 20.
 LaTeX Info: Redefining \th on input line 20.
 Package csquotes Info: Redefining character " on input line 20.
-<photo/me2.jpeg, id=60, 702.625pt x 702.625pt>
+<photo/me2.jpeg, id=56, 702.625pt x 702.625pt>
 File: photo/me2.jpeg Graphic file (type jpg)
 <use photo/me2.jpeg>
 Package pdftex.def Info: photo/me2.jpeg  used on input line 34.
@@ -1074,15 +1074,15 @@ LaTeX Warning: Empty bibliography on input line 3.
 [1
 
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./photo
-/me2.jpeg>]) (./services.tex) (./talks.tex [2]) (./teach_exp.tex)
-(./awards.tex) (./music.tex) (./work.tex) 
+/me2.jpeg>]) (./services.tex) (./teach.tex [2]) (./awards.tex) (./music.tex)
+(./work.tex) 
 AED: lastpage setting LastPage
 [3] (./cv_Tzu-Han_Hsu.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `cv_Tzu-Han_Hsu.out' has not changed.
-(rerunfilecheck)             Checksum: 171397E4C0366B5CA3BB455822168F88;1824.
+(rerunfilecheck)             Checksum: 3762CCF0149A9F3031C156EF5C1ECB48;1681.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                cv_Tzu-Han_Hsu
@@ -1093,10 +1093,10 @@ Package logreq Info: Writing requests to 'cv_Tzu-Han_Hsu.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21150 strings out of 478268
- 364404 string characters out of 5846347
- 1193357 words of memory out of 5000000
- 39026 multiletter control sequences out of 15000+600000
+ 21143 strings out of 478268
+ 364307 string characters out of 5846347
+ 1194357 words of memory out of 5000000
+ 39023 multiletter control sequences out of 15000+600000
  476318 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,11n,68p,1055b,1739s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1108,10 +1108,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></us
 r/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/
 local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on cv_Tzu-Han_Hsu.pdf (3 pages, 569510 bytes).
+Output written on cv_Tzu-Han_Hsu.pdf (3 pages, 569697 bytes).
 PDF statistics:
- 130 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
