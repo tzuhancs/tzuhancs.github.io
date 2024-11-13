@@ -121,13 +121,15 @@
 	\begin{enumerate}[leftmargin=*] #1 \end{enumerate}}
 
 % List items
-\newcommand{\entry}[1]{\item\small{#1}}
+\newcommand{\entry}[1]{\item[\mybullet]{#1}}
 \newcommand{\entryextra}[1]{\textcolor{color-detail}{\entry{#1}}}
 \newcommand{\entrylabeled}[2][]{\item[#1]\small{#2}}
 
 \newcommand{\entrymid}[4][]{
 	\item[#1] \small{#2} \hfill \small{#3}
-	\vspace{-\smallskipamount} \item[]\small{\textit{#4}}}
+%	\vspace{-\smallskipamount} 
+	\hspace*{3mm}{#4}
+}
 
 \newcommand{\entrybig}[5][]{\item[#1]
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -152,3 +154,50 @@
 	\ifboolexpr{ ( test {\ifdefequal{\firstname}{\namepartgiven}} or test {\ifdefequal{\firstinit}{\namepartgiven}} ) and test {\ifdefequal{\lastname}{\namepartfamily}} }
 	{\mkbibbold{#1}}{#1}%
 }
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%
+%  TZU-HAN MACRO    %
+%%%%%%%%%%%%%
+\newcommand{\mybullet}{$\cdot$}
+\newcommand{\entrypaper}[3]
+{  \item[\mybullet]
+	\small{#1} \\
+	\textbf{#2} \\
+	\textit{#3}
+}
+\newcommand{\meinpaper}{\underline{Tzu-Han Hsu}}
+\newcommand{\entrypreprint}[3]
+{  \item[\mybullet]
+	\small{#1} \\
+	\textbf{#2} 
+	{\it\small{#3}}
+}
+
+\newcommand{\entryproj}[3]
+{  \item[\mybullet]
+	\small{#1} \\
+	\textbf{#2} 
+	{\it\small{#3}}
+}
+
+\newcommand{\entrysimple}[3]
+{  \item[\mybullet]
+	\textbf{#1}  \hfill {\small{#2}} \\
+	{\small{#3}}
+}
+
+\newcommand{\entrysingle}[2]
+{  \item[\mybullet]
+	{#1}  \hfill {\small{#2}} \\
+}
+
+
