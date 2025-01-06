@@ -168,24 +168,26 @@
 %  TZU-HAN MACRO    %
 %%%%%%%%%%%%%
 \newcommand{\mybullet}{$\cdot$}
+\newcommand{\mysubbullet}{$\diamond$}
 \newcommand{\entrypaper}[3]
-{  \item[\mybullet]
+{  \item
 	\small{#1} \\
-	\textbf{#2} \\
+	\textbf{``#2"} \\
 	\textit{#3}
 }
 \newcommand{\meinpaper}{\underline{Tzu-Han Hsu}}
+
 \newcommand{\entrypreprint}[3]
 {  \item[\mybullet]
 	\small{#1} \\
-	\textbf{#2} 
+	\textbf{``#2"} 
 	{\it\small{#3}}
 }
 
 \newcommand{\entryproj}[3]
 {  \item[\mybullet]
 	\small{#1} \\
-	\textbf{#2} 
+	\textbf{``#2"} 
 	{\it\small{#3}}
 }
 
@@ -199,5 +201,17 @@
 {  \item[\mybullet]
 	{#1}  \hfill {\small{#2}} \\
 }
+
+\newcommand{\entryhonor}[3]
+{  \item[\mybullet]
+	\small\textbf{#1}{#2}  \hfill {\small{#3}} \\
+}
+
+\newcommand{\entryreview}[3]
+{  
+	\item[\mysubbullet]
+	\textbf{\small(#2)} {$\langle$\footnotesize{#3}$\rangle$}  \textit{#1}  
+}
+
 
 
