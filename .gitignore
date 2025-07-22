@@ -4,3 +4,13 @@
 *.out
 *.pdf
 *.synctex.gz
+
+
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.run.xml
+
+.DS_Store
+.vscode/

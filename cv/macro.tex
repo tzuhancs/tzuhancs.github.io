@@ -122,6 +122,30 @@
 \newcommand{\orderedouterlist}[1]{
 	\begin{enumerate}[leftmargin=*] #1 \end{enumerate}}
 
+\newcommand{\conferencepaperlist}[1]{
+  \begin{enumerate}[label={[c\arabic*]}, leftmargin=*]
+    #1
+  \end{enumerate}
+}
+
+\newcommand{\journalpaperlist}[1]{
+  \begin{enumerate}[label={[j\arabic*]}, leftmargin=*]
+    #1
+  \end{enumerate}
+}
+
+\newcommand{\arxivpaperlist}[1]{
+  \begin{enumerate}[label={[a\arabic*]}, leftmargin=*]
+    #1
+  \end{enumerate}
+}
+
+\newcommand{\underreviewpaperlist}[1]{
+  \begin{enumerate}[label={[u\arabic*]}, leftmargin=*]
+    #1
+  \end{enumerate}
+}
+
 % List items
 \newcommand{\entry}[1]{\item[\mybullet]{#1}}
 \newcommand{\entryextra}[1]{\textcolor{color-detail}{\entry{#1}}}
@@ -176,6 +200,11 @@
 	\small{#1} \\
 	\textbf{``#2"} \\
 	\textit{#3}
+}
+\newcommand{\entrypapertobe}[2]
+{  \item
+	\small{#1} \\
+	\textbf{``#2"}
 }
 \newcommand{\meinpaper}{\underline{Tzu-Han Hsu}}
 
