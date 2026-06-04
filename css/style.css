@@ -1573,3 +1573,117 @@ body.offcanvas {
 
 .js .animate-box {
   opacity: 0; }
+
+
+/* ======================================================= */
+/*   Year-grouped News Timeline (dates on the left)        */
+/* ======================================================= */
+.news-tl { position: relative; margin: 10px 0 25px; }
+.news-tl:before {
+  content: '';
+  position: absolute;
+  top: 12px; bottom: 12px;
+  left: 110px;
+  width: 3px;
+  background: #e6e8ee; }
+.news-tl-year { position: relative; height: 34px; margin: 28px 0 18px; }
+.news-tl-year:first-child { margin-top: 6px; }
+.news-tl-year span {
+  position: absolute;
+  left: 110px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #2c3e50;
+  color: #fff;
+  font-family: "Quicksand", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding: 5px 18px;
+  border-radius: 18px; }
+.news-tl-item {
+  position: relative;
+  min-height: 38px;
+  margin: 14px 0;
+  padding-left: 150px; }
+.news-tl-date {
+  position: absolute;
+  left: 0;
+  width: 86px;
+  top: 9px;
+  text-align: right;
+  color: #999;
+  font-size: 13px;
+  font-weight: 500; }
+.news-tl-dot {
+  position: absolute;
+  left: 110px;
+  margin-left: -17px;
+  top: 2px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #2c98f0;
+  text-align: center;
+  line-height: 34px;
+  box-shadow: 0 0 0 4px #fff; }
+.news-tl-dot i { color: #fff; font-size: 15px; }
+.news-tl-card {
+  background: #f7f8fa;
+  border-radius: 8px;
+  padding: 11px 16px;
+  color: #545454;
+  line-height: 1.5; }
+.news-tl-card a { color: #2c98f0; text-decoration: underline; }
+.news-tl-item.paper      .news-tl-dot { background: #2c98f0; }
+.news-tl-item.talk       .news-tl-dot { background: #ec5453; }
+.news-tl-item.milestone  .news-tl-dot { background: #f9bf3f; }
+.news-tl-item.internship .news-tl-dot { background: #a84cb8; }
+.news-tl-item.honor      .news-tl-dot { background: #2fa499; }
+.news-tl-item.service    .news-tl-dot { background: #2fa499; }
+.news-tl-toggle { text-align: center; margin: 22px 0 6px; }
+.news-tl-toggle a {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+  padding: 4px 14px;
+  color: #2c98f0;
+  font-weight: 500; }
+@media screen and (max-width: 480px) {
+  .news-tl:before { left: 76px; }
+  .news-tl-year span { left: 76px; }
+  .news-tl-date { width: 52px; font-size: 12px; }
+  .news-tl-dot { left: 76px; }
+  .news-tl-item { padding-left: 108px; } }
+
+/* Tighten the gap between About Me and Recent News */
+.colorlib-about { padding-bottom: 1em; }
+.colorlib-blog  { padding-top: 1em; }
+
+/* ======================================================= */
+/*   Publications table                                    */
+/* ======================================================= */
+.pub-table-wrap { overflow-x: auto; margin-bottom: 26px; }
+.pub-table { width: 100%; border-collapse: collapse; }
+.pub-table td { padding: 13px 10px; border-bottom: 1px solid #ececf0; vertical-align: top; }
+.pub-table tr:last-child td { border-bottom: 0; }
+.pub-table tr:hover td { background: #f7f8fa; }
+.pub-year { width: 52px; color: #9aa0a6; font-weight: 700; white-space: nowrap; font-size: 14px; }
+.pub-title { font-weight: 600; color: #2d2d2d; line-height: 1.4; }
+.pub-authors { color: #9aa0a6; font-size: 13px; margin-top: 3px; }
+.pub-venue { width: 124px; }
+.pub-badge {
+  display: inline-block; background: #2c98f0; color: #fff;
+  font-weight: 600; font-size: 12px; padding: 3px 10px;
+  border-radius: 12px; text-decoration: none; white-space: nowrap; }
+a.pub-badge:hover { opacity: .85; color: #fff; }
+.pub-badge.journal { background: #2fa499; }
+.pub-badge.preprint { background: #9aa0a6; }
+.pub-venue-note { display: block; color: #b0b4ba; font-size: 11px; margin-top: 4px; }
+.pub-links { width: 110px; text-align: right; white-space: nowrap; }
+.pub-links a { color: #2c98f0; font-weight: 600; font-size: 13px; margin-left: 8px; }
+.pub-links a:first-child { margin-left: 0; }
+@media screen and (max-width: 600px) {
+  .pub-year { display: none; }
+  .pub-table td { padding: 11px 6px; } }
