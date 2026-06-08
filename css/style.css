@@ -1792,3 +1792,16 @@ a.pub-badge:hover { opacity: .85; color: #fff; }
 .social-btn.scholar  { background:#4285F4; }
 .social-btn.twitter  { background:#1DA1F2; }
 .social-btn.linkedin { background:#0A66C2; }
+
+/* ======================================================= */
+/*   Announcement callout                                  */
+/* ======================================================= */
+.announcement {
+  display:flex; align-items:center; gap:14px;
+  background: linear-gradient(135deg,#e8f4ff,#e6f8f4);
+  border:1px solid #bfe0fb; border-left:6px solid #2c98f0;
+  border-radius:12px; padding:16px 20px; margin:4px 0 26px;
+  box-shadow:0 6px 22px rgba(44,152,240,.16);
+  color:#2c3a45; font-size:15px; line-height:1.55; }
+.announcement i { color:#2c98f0; font-size:26px; flex-shrink:0; }
+.announcement strong { color:#1b6fb8; }
