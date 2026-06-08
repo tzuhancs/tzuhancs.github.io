@@ -37,9 +37,9 @@
 
 	var halfHeight = function() {
 		if ( !isMobile.any() ) {
-			$('.js-halfheight').css('height', $(window).height()/2);
+			$('.js-halfheight').css('height', $(window).height()/3);
 			$(window).resize(function(){
-				$('.js-halfheight').css('height', $(window).height()/2);
+				$('.js-halfheight').css('height', $(window).height()/3);
 			});
 		}
 	};
