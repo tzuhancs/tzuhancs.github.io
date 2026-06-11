@@ -1,92 +1,60 @@
 \section{Research Experience}
 
-
-\outerlist{
-	\entrymid[\mybullet]
-	{\textbf{Graduate Research Assistant}, {\em Michigan State University}}
-	{2020\textendash Present}
-	{
-		\begin{tabular}{p{1.8cm} p{13cm} }
-			Topics: &Algorithms for Runtime Enforcement, Automated Program Repair, Policy Synthesis, and Model Checking for Hyperproperties\\
-			Keywords:  &  {Linear Temporal Logic, SMT Solving, Symbolic Execution, SyGuS}\\
-%			Tools:  &  {KLEE, NuSMV, Z3, }\\
-		\end{tabular}
-%		\begin{tabular}{p{1.8cm} p{15cm} }
-%			Projects: & \mysubbullet~ Runtime Enforcement (RE) for Hyperproperties \\
-%							& \mysubbullet~ Automated Program Repair (APR) for Hyperproperties \\
-%							& \mysubbullet~ Policy Synthesis for Hyperproperties \\
-%							& \mysubbullet~ Model Checking for Hyperproperties \\
-%		\end{tabular}
-	}
-	
-	\entrymid[\mybullet]
-	{\textbf{Research Intern}, {\em Microsoft Research (MSR)}}
-	{Summer 2023}
-	{
-	\begin{tabular}{p{1.8cm} p{13cm} }
-		Project: &Theorem-Carrying-Transaction: Provable Security for Smart Contracts\\
-		Mentors:  & {\em Shuo Chen, Nikolaj Bjørner} \\
-		Keywords:  &  {Solidity, Boogie, EVM, Go-Ethereum, ERC20, UniSwap-V2}\\
-	\end{tabular}
-	}
-	
-		
-	\entrymid[\mybullet]
-	{\textbf{Applied Science Intern}, {\em Amazon Web Services Automated Reasoning Group (AWS-ARG)}}
-	{Summer 2022}
-	{
-		\begin{tabular}{p{1.8cm} p{13cm} }
-			Project: & Symbolic Model Checking for Distributed Protocols with Parallelization\\
-			Mentors:  & {\em Aman Goel, Michael Whalen} \\
-			Keywords:  &  {P Language, Symbolic execution, AWS Lambda, Amazon S3 }\\
-		\end{tabular}
-	}
-
-	\entrymid[\mybullet]
-	{\textbf{Undergrad Research Assistant}, {\em Iowa State University}}
-	{2019\textendash 20}
-	{
-		\begin{tabular}{p{1.8cm} p{15cm} }
-			Project: & Bounded Model checking for Hyperproperties \\
-			Advisor:  & {\em Borzoo Bonakdarpour} \\
-			Keywords: & {QBF solvers, HyperLTL, Information-flow security}
-		\end{tabular}
-	}
-
+% One detail line: fixed-width bold label + top-aligned value on the same baseline
+\newcommand{\detail}[2]{%
+	\makebox[1.7cm][l]{\small\bfseries\color{color-title}#1}%
+	\parbox[t]{13.5cm}{\small #2}\\[2pt]%
 }
 
-%\outerlist{
+% #1 = role, #2 = institution, #3 = years, #4 = \detail lines
+\newcommand{\research}[4]{%
+	\item[]
+	{\bf #1}\quad{\small\it #2}\hfill{\small #3}\\[3pt]
+	#4
+	\vspace{3pt}
+}
 
-%\entrybig
-%	{\textbf{Graduate Research Assistant}}{2020\textendash Present}
-%	{Department of Computer Science and Engineering, Michigan State University}{}
-%
-%\entrybig
-%	{\textbf{Research Assistant}}{2019\textendash 2020}
-%	{Department of Computer Science, Iowa State University}{}
+\begin{itemize}[leftmargin=*,itemsep=4pt]
 
+\research
+{Postdoctoral Research Fellow @ Harvard University}{}{2026 -- Present}
+{
+	\detail{Advisor}{\textit{Prof. Nada Amin}}
+	\detail{Topic}{Integrating AI and Large Language Models (LLMs) with Formal Methods}
+}
 
-%\entrybig
-%	{\textbf{Teaching Assistant}}{2019}
-%	{Department of Computer Science, Iowa State University}{}
+\research
+{Graduate Research Assistant @ Michigan State University}{}{2020 -- 2026}
+{
+	\detail{Advisor}{\textit{Prof. Borzoo Bonakdarpour}}
+	\detail{Topics}{\textsc{Reasoning about Hyperproerties through Symblic Decision Procedures}}
+	\vspace{3pt}
+	\detail{}{\scriptsize Keywords: HyperLTL, SMT Solving, Symbolic Execution, SyGuS, Runtime Enforcement, Program Repair, Policy Synthesis, Model Checking, Reinforcement Learning}
+	\vspace{3pt}
+}
 
-%}
+\research
+{Research Intern @ Microsoft Research (MSR)}{}{Summer 2023}
+{
+	\detail{Mentors}{\textit{Shuo Chen, Nikolaj Bjørner}}
+	\detail{Project}{ \textsc{Theorem-Carrying-Transaction: Provable Security for Smart Contracts}}
+	\detail{}{\scriptsize Keywords: Solidity, Boogie, EVM, Go-Ethereum, ERC20, UniSwap-V2}
+}
 
+\research
+{Applied Scientist Intern @ Amazon AWS Automated Reasoning Group}{}{Summer 2022}
+{
+	\detail{Mentors}{\textit{Aman Goel, Michael Whalen}}
+	\detail{Project}{ \textsc{Symbolic Model Checking for Distributed Protocols with Parallelization}}
+	\detail{}{\scriptsize Keywords: P Language, Symbolic Execution, AWS Lambda, Amazon S3}
+}
 
-%\section{Work Experience}
+\research
+{Undergraduate Research Assistant @ Iowa State University}{}{2019 -- 2020}
+{
+	\detail{Advisor}{\textit{Prof. Borzoo Bonakdarpour}}
+	\detail{Project}{ \textsc{Bounded Model Checking for Hyperproperties}}
+	\detail{}{\scriptsize Keywords: QBF/SMT Solvers, Z3, QuAbS, Linear Temporal Logic, Information-Flow Security}
+}
 
-%\outerlist{
-
-%\entrybig
-%	{\textbf{Software Engineer Intern}}{2019\textendash 2020}
-%	{Worrell Inc., Minneapolis, MN}{} 
-
-%\entrybig
-%	{\textbf{Web Developer and Business Partner}}{2018\textendash 2020}
-%	{H\&Z Gadgets LLC., Ames, IA}{} 
-
-%\entrybig
-%	{\textbf{Teaching Assistant}}{2019}
-%	{Department of Computer Science, Iowa State University}{}
-
-%}
+\end{itemize}

@@ -1,45 +1,59 @@
 \section{Education}
 
-\newcommand{\fromto}[2]{#1\textendash #2}
-
-\newcommand{\eduentry}[4][]{\item[#1]
-	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-		{\bf #2} & {#3} \\ ~~{\small#4} \\ \end{tabular*}}
-
-\outerlist{
-
-\eduentry
-{{Ph.D. Student in Computer Science and Engineering}}
-{\fromto{2020}{Present}}
-{Michigan State University, East Lansing, MI, USA, {\em Advisor: Dr. Borzoo Bonakdarpour}}
-\hspace*{3mm} {\em \small GPA: 3.93/4.0} 
-%\hspace*{5mm} {\em Advisor: Dr. Borzoo Bonakdarpour}\\
-\hspace*{5mm} {\em 2024 Best Research Poster Award by MSU College of Engineering } 
-%\hspace{3.3cm} {\em 2021 Google Research Fellowship Nomination by MSU College of Engineering }
-
-
-\eduentry
-{{Master in Computer Science and Engineering}}
-{}
-{Michigan State University, East Lansing, MI, USA, {\em Advisor: Dr. Borzoo Bonakdarpour}}
-\hspace*{3mm} {\em \small GPA: 3.93/4.0} 
-%\hspace*{5mm} {\em Advisor: Dr. Borzoo Bonakdarpour}\\
-\hspace{5mm} {\em 2021 Google Research Fellowship Nomination by MSU College of Engineering }
-
-\eduentry
-{\textbf{Bachelor of Science in Computer Science}}
-{\fromto{2016}{20}}
-{Iowa State University, Ames, IA, USA }
-\hspace*{3mm} {\em \small GPA: 3.86/4.0}
-\hspace*{5mm} {\em Graduated Magna Cum Laude}\\
-\hspace{3.3cm} {\em 2013-2020 ISU Dean's List}
-
-\eduentry
-{\textbf{Bachelor of Music in Piano Performance}}
-{\fromto{2013}{17}}
-{Iowa State University, Ames, IA, USA }
-\hspace*{3mm} {\em \small GPA: 3.86/4.0} 
-\hspace*{5mm} {\em Outstanding Senior Nomination by the ISU Department of Music}
-
+% #1 = degree, #2 = years, #3 = institution / advisor line, #4 = details block
+\newcommand{\degree}[4]{%
+	\item[]
+	{\bf #1}\hfill{\small #2}\\[2pt]
+	{\small #3}%
+	#4
+	\vspace{4pt}
 }
 
+% Trophy-bulleted award list under a degree
+\newcommand{\awardlist}[1]{%
+	\begin{itemize}[leftmargin=1.6em,nosep,topsep=2pt,label={\footnotesize\textcolor{color-title}{\faTrophy}}]
+		#1
+	\end{itemize}
+}
+
+\begin{itemize}[leftmargin=*,itemsep=4pt]
+
+\degree
+{Ph.D. in Computer Science and Engineering}{2020 -- 2026}
+{Michigan State University, East Lansing, MI}  
+{\\[2pt]{\small \textbf{GPA:} 3.93/4.0} \qquad {\small \textbf{Advisor:} Dr. Borzoo Bonakdarpour}
+	\awardlist{
+		\item {\footnotesize 2026 Three Minute Thesis (3MT) Competition Winner, MSU College of Engineering}
+		\item {\footnotesize 2024 Best Research Poster Award, MSU College of Engineering}
+	}
+}
+
+\degree
+{M.S. in Computer Science and Engineering}{}
+{Michigan State University, East Lansing, MI}
+{\\[2pt]{\small \textbf{GPA:} 3.93/4.0}
+	\awardlist{
+		\item {\footnotesize 2021 Google Research Fellowship Nomination, MSU College of Engineering}
+	}
+}
+
+\degree
+{B.S. in Computer Science}{2016 -- 2020}
+{Iowa State University, Ames, IA}
+{\\[2pt]{\small \textbf{GPA:} 3.86/4.0}
+	\awardlist{
+		\item {\footnotesize Graduated \textit{Magna Cum Laude}}
+		\item {\footnotesize 2013 -- 2020 ISU College of Liberal Arts and Sciences Dean's List}
+	}
+}
+
+\degree
+{B.M. in Piano Performance}{2013 -- 2017}
+{Iowa State University, Ames, IA}
+{\\[2pt]{\small \textbf{GPA:} 3.86/4.0}
+	\awardlist{
+		\item {\footnotesize Outstanding Senior Nomination, ISU Department of Music}
+	}
+}
+
+\end{itemize}

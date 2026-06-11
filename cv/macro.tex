@@ -13,6 +13,7 @@
 \usepackage[russian,english]{babel}         % Language styles
 \usepackage{graphicx}                       % Importing graphics
 \usepackage[export]{adjustbox}              % Aligning margins
+\usepackage{fontawesome5}                   % Icons (email, phone, etc.)
 
 \usepackage{xspace}
 \usepackage{array,tabularx}
@@ -58,7 +59,11 @@
 \newcommand{\email}[1]{\href{mailto:#1}{#1}}
 \newcommand{\website}[1]{\href{https://#1/}{#1}}
 \newcommand{\linkedin}[1]{\href{https://www.linkedin.com/in/#1/}{#1}}
-\newcommand{\gscholar}[1]{\href{https://scholar.google.com/citations?user=haAJZpIAAAAJ&hl=en&oi=ao}{#1}}
+\newcommand{\gscholar}[1]{\href{https://scholar.google.com/citations?user=haAJZpIAAAAJ}{#1}}
+
+% Colored icon helper (uses theme color) + fixed-width icon box for alignment
+\newcommand{\icn}[1]{\textcolor{color-title}{#1}}
+\newcommand{\icnbox}[1]{\makebox[1.1em][c]{\textcolor{color-title}{#1}}}
 
 % Dummy environment
 \newenvironment*{dummyenv}{}{}
