@@ -1661,6 +1661,10 @@ body.offcanvas {
 .colorlib-about { padding-bottom: 1em; }
 .colorlib-blog  { padding-top: 1em; }
 
+/* Add breathing room so the hero header image doesn't crowd About Me */
+#colorlib-hero { margin-bottom: 4em; }
+.colorlib-about { padding-top: 5em; }
+
 /* ======================================================= */
 /*   Publications table                                    */
 /* ======================================================= */
